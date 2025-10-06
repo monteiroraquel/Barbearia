@@ -10,8 +10,6 @@ public abstract class Pessoa {
     protected String endereco;
 
 
-    public Pessoa() {
-    }
     public Pessoa( int id, String nome, String cpf, String telefone, String email, String endereco) {
 
         this.id = id;
