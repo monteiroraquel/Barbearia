@@ -1,0 +1,11 @@
+[
+  {
+    "nome": "Eduardo Costa",
+    "idade": 25,
+    "telefone": "319666666",
+    "email": "edu@email.com",
+    "cpf": "111.222.333-44",
+    "endereco": "Rua das Flores, 123",
+    "preferenciaServico": "Corte masculino"
+  }
+]

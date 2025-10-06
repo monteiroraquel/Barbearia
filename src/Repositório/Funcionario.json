@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Raquel Monteiro",
+    "idade": 21,
+    "telefone": "31999999999",
+    "email": "raquel@email.com",
+    "cpf": "123.456.789-00",
+    "cargo": "Barbeiro",
+    "salario": 2500.00
+  },
+  {
+    "nome": "Maria Eduarda",
+    "idade": 21,
+    "telefone": "31888888888",
+    "email": "eduarda@email.com",
+    "cpf": "987.654.321-00",
+    "cargo": "Atendente",
+    "salario": 2500.00
+  }
+]
