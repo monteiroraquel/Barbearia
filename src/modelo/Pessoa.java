@@ -20,11 +20,13 @@ public abstract class Pessoa {
         this.endereco = endereco;
     }
 
+    protected abstract int gerarId();
+
+
 
     public int getId() {
         return id;
     }
-
     public String getNome() {
         return nome;
     }

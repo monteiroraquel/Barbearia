@@ -2,14 +2,13 @@ package modelo;
 
 public class Funcionario extends Pessoa{
 
-
-
     protected String cargo;
     protected double salario;
     protected String login;
     protected int senha;
+    private static int contador = 1;
 
-    public Funcionario() {}
+
 
     public Funcionario(String cargo, double salario, String login, int senha, int id, String nome, String cpf, String telefone, String email, String endereco) {
         super(id, nome, cpf, telefone, email, endereco);
@@ -17,6 +16,11 @@ public class Funcionario extends Pessoa{
         this.salario = salario;
         this.login = login;
         this.senha = senha;
+    }
+
+    @Override
+    protected int gerarId() {
+        return contador++;
     }
 
     public int getId(){ return id; }
