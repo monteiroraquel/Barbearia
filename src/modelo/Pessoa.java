@@ -1,18 +1,20 @@
 package modelo;
 
-public class Pessoa {
+public abstract class Pessoa {
 
-    private String nome;
-    private String cpf;
-    private String telefone;
-    private String email;
-    private String endereco;
+    protected int id;
+    protected String nome;
+    protected String cpf;
+    protected String telefone;
+    protected String email;
+    protected String endereco;
 
 
     public Pessoa() {
     }
-    public Pessoa( String nome, String cpf, String telefone, String email, String endereco) {
+    public Pessoa( int id, String nome, String cpf, String telefone, String email, String endereco) {
 
+        this.id = id;
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
@@ -20,6 +22,10 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
+
+    public int getId() {
+        return id;
+    }
 
     public String getNome() {
         return nome;
