@@ -4,10 +4,10 @@ public class Funcionario extends Pessoa{
 
 
 
-    private String cargo;
-    private double salario;
-    private String login;
-    private int senha;
+    protected String cargo;
+    protected double salario;
+    protected String login;
+    protected int senha;
 
     public Funcionario() {}
 
