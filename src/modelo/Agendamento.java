@@ -1,4 +1,4 @@
-package modelo;
+/*package modelo;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -68,3 +68,4 @@ public class Agendamento {
         this.obs = obs;
     }
 }
+*/

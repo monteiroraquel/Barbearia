@@ -1,5 +1,4 @@
-package modelo;
-
+/*
 public class Servico {
     protected int id;
     protected String descricao;
@@ -47,3 +46,4 @@ public class Servico {
             System.out.println("ID: " + s.getId() + " | " + s.getDescricao() + " | Valor: R$ " + s.getValor());
         }
 }
+*/
