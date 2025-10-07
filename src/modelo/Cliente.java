@@ -10,7 +10,7 @@ public class Cliente extends Pessoa{
     }
 
     @Override
-    protected int gerarId() {
+    public int gerarId() {
         return contador++;
     }
 
