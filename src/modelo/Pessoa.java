@@ -10,18 +10,14 @@ public abstract class Pessoa {
     protected String endereco;
 
 
-    public Pessoa( String nome, String cpf, String telefone, String email, String endereco) {
+    public Pessoa( int id, String nome, String cpf, String telefone, String email, String endereco) {
 
-        this.id = gerarId();
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
         this.email = email;
         this.endereco = endereco;
     }
-
-    protected abstract int gerarId();
-
 
 
     public int getId() {

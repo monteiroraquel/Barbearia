@@ -6,24 +6,17 @@ public class Funcionario extends Pessoa{
     protected double salario;
     protected String login;
     protected int senha;
-    private static int contador = 1;
 
 
 
     public Funcionario(String cargo, double salario, String login, int senha, int id, String nome, String cpf, String telefone, String email, String endereco) {
-        super( nome, cpf, telefone, email, endereco);
+        super(id, nome, cpf, telefone, email, endereco);
         this.cargo = cargo;
         this.salario = salario;
         this.login = login;
         this.senha = senha;
     }
 
-    @Override
-    protected int gerarId() {
-        return contador++;
-    }
-
-    public int getId(){ return id; }
 
     public String getCargo() {
         return cargo;

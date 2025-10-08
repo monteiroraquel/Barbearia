@@ -3,15 +3,9 @@ package modelo;
 
 public class Cliente extends Pessoa{
 
-    private static int contador = 1;
 
-    public Cliente( String nome, String cpf, String telefone, String email, String endereco) {
-        super( nome, cpf, telefone, email, endereco);
-    }
-
-    @Override
-    public int gerarId() {
-        return contador++;
+    public Cliente(int id, String nome, String cpf, String telefone, String email, String endereco) {
+        super(id, nome, cpf, telefone, email, endereco);
     }
 
     public String toString() {
