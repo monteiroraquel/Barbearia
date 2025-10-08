@@ -22,10 +22,6 @@
          */
         public void menu() {
 
-            // Lê os arquivos JSON e carrega os dados (por enquanto, só lê)
-            JSONArray dadosClientes = JSONUtils.lerArquivo(CAMINHO_CLIENTES);
-            JSONArray dadosFuncionarios = JSONUtils.lerArquivo(CAMINHO_FUNCIONARIOS);
-            JSONArray dadosGerente = JSONUtils.lerArquivo(CAMINHO_GERENTES);
 
         }
 
