@@ -22,5 +22,14 @@
         "nome": "grwee",
         "id": 2,
         "email": "54252"
+    },
+    {
+        "telefone": "432547563",
+        "tipo": "Cliente",
+        "endereco": "hthjrdhbgsbg",
+        "cpf": "99765457887",
+        "nome": "Luan Deivid",
+        "id": 3,
+        "email": "y543hgfdhrj5ej"
     }
 ]
