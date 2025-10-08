@@ -2,14 +2,14 @@ package modelo;
 
 import java.time.LocalDateTime;
 
-public class Despesas {
+public class Despesa {
     private int id;
     private String descricao;
     private double valor;
     private LocalDateTime data;
     private String categoria;
 
-    public Despesas(String descricao, double valor, LocalDateTime data, String categoria) {
+    public Despesa(String descricao, double valor, LocalDateTime data, String categoria) {
         this.descricao = descricao;
         this.valor = valor;
         this.data = data;
