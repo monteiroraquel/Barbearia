@@ -1,29 +1,25 @@
-/**
+
 package modelo;
 
+import java.time.LocalTime;
+
 public class Servico {
-    protected int id;
-    protected String descricao;
-    protected double valor;
+    private int id;
+    private String descricao;
+    private double valor;
+    private LocalTime duracao;
+    private Estacao estacao_necessaria;
 
-    public static Servico[] estacoes = {
-            new Servico(1, "Estação 1 - Lavagem e Secador", 50.0),
-            new Servico(2, "Estação 2 - Corte / Barba", 40.0),
-            new Servico(3, "Estação 3 - Corte / Barba", 40.0)
-    };
 
-    public Servico(int id, String descricao, double valor) {
-        this.id = id;
-        this.descricao=descricao;
-        this.valor=valor;
-    };
+    public Servico(String descricao, double valor, LocalTime duracao, Estacao estacao_necessaria) {
+        this.descricao = descricao;
+        this.valor = valor;
+        this.duracao = duracao;
+        this.estacao_necessaria = estacao_necessaria;
+    }
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getDescricao() {
@@ -42,10 +38,27 @@ public class Servico {
         this.valor = valor;
     }
 
-    public static void listarEstacoes() {
-        System.out.println("Estações de Trabalho");
-        for (Servico s : estacoes) {
-            System.out.println("ID: " + s.getId() + " | " + s.getDescricao() + " | Valor: R$ " + s.getValor());
-        }
+    public LocalTime getDuracao() {
+        return duracao;
+    }
+
+    public void setDuracao(LocalTime duracao) {
+        this.duracao = duracao;
+    }
+
+    public Estacao getEstacao_necessaria() {
+        return estacao_necessaria;
+    }
+
+    public void setEstacao_necessaria(Estacao estacao_necessaria) {
+        this.estacao_necessaria = estacao_necessaria;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + id +
+                "\nDescrição: " + descricao +
+                "\nValor: R$ " + valor +
+                "\nTipo de estação: " + estacao_necessaria;
+    }
 }
-**/
